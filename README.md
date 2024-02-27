@@ -1,70 +1,70 @@
-# Dante 3 - This is it! 🔥
+# Dante 3 - É isso aí! 🔥
 
 [![Rollup Build](https://github.com/michelson/Dante/actions/workflows/ci.yml/badge.svg)](https://github.com/michelson/Dante/actions/workflows/ci.yml)
 
-**Just another medium clone built on top of ProseMirror's / TipTap**
+**Apenas mais um clone médio construído sobre o ProseMirror / TipTap**
 --------------------------------------------------------------------
 
-> Dante3 is a port from [Dante2 (Draftjs) ](https://github.com/michelson/Dante/tree/master/packages/dante2). This version is built on top of [TipTap](https://www.tiptap.dev/) and reaches all Dante2's features with a shiny ultra mega super uber maintainable architecture.
+> Dante3 é um port de [Dante2 (Draftjs) ](https://github.com/michelson/Dante/tree/master/packages/dante2). Essa versão é construída sobre o [TipTap](https://www.tiptap.dev/) e incorpora todos os recursos do Dante2 com uma arquitetura ultra mega super mantível.
 
 https://user-images.githubusercontent.com/11976/120087165-bb5c4f00-c0b3-11eb-9002-97c480f3725a.mp4
 
-See the demo at: [dante-editor.dev](https://dante-editor.dev)
+Veja a demonstração em: [dante-editor.dev](https://dante-editor.dev)
 
-**Why rewrite a new version of Dante?**
+**Por que reescrever uma nova versão do Dante?**
 ---------------------------------------
 
-The previous version (Dante2) was made on DraftJs, that's a facebook library to build WYSIWYG editor, I'd choose that technology because it implemented a very interesting data model and abstracted many parts of the heuristics implementation that [Dante1 (the previous version)](https://github.com/michelson/Dante/tree/master/packages/dante1-legacy) built as a naive implementation relying a lot on DOM manipulation, So Dante2 was great and is working on a ton of production websites. Sadly over the last years this library has not received much attention from maintainers. Among the ~700 unattended reported issues there are some that have become a deal breaker for me:
+A versão anterior (Dante2) foi feita com o DraftJs, uma biblioteca do Facebook para construir editores WYSIWYG. Eu escolhi essa tecnologia porque ela implementou um modelo de dados muito interessante e abstraiu muitas partes da implementação de heurísticas que o [Dante1 (the previous version)](https://github.com/michelson/Dante/tree/master/packages/dante1-legacy)construiu como uma implementação ingênua, dependendo muito da manipulação do DOM. Dante2 foi ótimo e está funcionando em muitos sites de produção. Infelizmente, nos últimos anos, esta biblioteca não recebeu muita atenção dos mantenedores. Entre as ~700 questões não atendidas relatadas, algumas se tornaram impeditivas para mim:
 
--   Bad mobile support.
+-   Suporte ruim para dispositivos móveis.
 
--   ~1MB added to your bundle (immutablejs is heavy)
+-   ~1MB adicionado ao seu pacote (immutablejs é pesado).
 
--   Not created for realtime collab.
+-   Não criado para colaboração em tempo real.
 
-**My bet, TipTap**
+**Minha aposta, TipTap**
 
-After shopping many editors libraries, I mean after tried to implement Dante on almost all of them **(Trix, Editorjs, Quilljs, Slate, Prosemirror)** I've **TipTap** library (which is based on Prosemirror)., I guess all editors libraries have their own flaws but after review it all TipTap is the best of it's class, very well designed/architectured, and I love the community around their ecosystem. So that's it.
+Depois de experimentar muitas bibliotecas de editores, quero dizer, depois de tentar implementar o Dante em quase todas elas (Trix, Editorjs, Quilljs, Slate, Prosemirror), encontrei a biblioteca TipTap (que é baseada no Prosemirror). Eu acredito que todas as bibliotecas de editores têm suas falhas, mas depois de revisar todas elas, o TipTap é o melhor da sua classe, muito bem projetado/arquitetado, e eu amo a comunidade ao redor do ecossistema deles. Então é isso.
 
-**Features:**
+**Recursos:**
 
--   Configurable and extensible extensions / plugins / components
+-   Extensões / plugins / componentes configuráveis e extensíveis.
 
--   Undo/redo.
+-   Desfazer/refazer.
 
--   Save Content as a data JSON/HTML structure.
+-   Salvar conteúdo como uma estrutura de dados JSON/HTML.
 
--   Load Content as a data JSON/HTML structure.
+-   Carregar conteúdo como uma estrutura de dados JSON/HTML.
 
--   Styled components Theme support (built in light/dark themes).
+-   Suporte a temas de componentes estilizados (temas claros/escuros integrados).
 
-**Block based content**:
+**Conteúdo baseado em blocos**:
 
-Dante editor can be extended with (React) components to, currently there are default components to be used as is:
+O editor Dante pode ser estendido com componentes (React), atualmente existem componentes padrão para serem usados como estão:
 
--   Image upload for paste html.
+-   Upload de imagem para colar HTML.
 
--   Video embed.
+-   Incorporar vídeo.
 
--   Video Recorder.
+-   Gravador de vídeo.
 
--   Embed.
+-   Incorporar.
 
--   Divider.
+-   Divisor.
 
--   Speech.
+-   Fala.
 
 -   Giphy.
 
-**Installation**
+**Instalação**
 ----------------
 
 `npm install dante3` or `yarn add dante3`
 
-**Usage**
+**Uso**
 ---------
 
-Component Based
+Baseado em componente
 
 ```
 <DanteEditor
@@ -72,28 +72,28 @@ Component Based
 />
 ```
 
-### **Options:**
+### **Opções:**
 
-Many configuration options and plugin usage can be found on the documentation page:
+Muitas opções de configuração e uso de plugins podem ser encontradas na página de documentação:
 
-See [dante-editor.dev](https://dante-editor.dev)
+Veja em [dante-editor.dev](https://dante-editor.dev)
 
-**Development**
+**Desenvolvimento**
 ---------------
 
-### **Installation**
+### **Instalação**
 
 -   `git clone https://github.com/michelson/dante`
 
-**dependencies**
+**dependências**
 
 -   `npm install` or `yarn install`
 
-### **Building**
+### **Compilação**
 
 -   `npm dante3_build` or `yarn dante3_build`
 
-### **dev install:**
+### **instalação de desenvolvimento:**
 
 -   lerna bootstrap
 
@@ -102,43 +102,43 @@ See [dante-editor.dev](https://dante-editor.dev)
 **Status**
 ----------
 
-> Dante3 is on beta, actively maintained, with all the features that Dante2 has. As is relying on TipTap (which is based on Prosemirror) which has a better browser support and mobile support. Also has realtime collab capabilities.
+> Dante3 está em beta, ativamente mantido, com todos os recursos que Dante2 possui. Como depende do TipTap (que é baseado no Prosemirror) e tem um melhor suporte a navegadores e dispositivos móveis. Também possui capacidades de colaboração em tempo real.
 
 **Monorepo**
 ------------
 
-This repository now contains prior Dante versions, located in the [packages](https://github.com/michelson/Dante/tree/master/packages) folder. so Dante1*, Dante2 and Dante3 lives in the same repo.
+Este repositório agora contém versões anteriores do Dante, localizadas na pasta [packages](https://github.com/michelson/Dante/tree/master/packages), então Dante1*, Dante2 e Dante3 vivem no mesmo repositório.
 
-> * Dante(1) is not maintained anymore.
+> * Dante(1) não é mais mantido.
 
-### **Open source license**
+### **Licença de código aberto**
 
-Dante is licensed under MIT, so you are free to do whatever you want. If you are using it commercially, become one of our wonderful sponsors to fund the maintenance, support and development of Dante now and in the future.
+Dante é licenciado sob a MIT, então você é livre para fazer o que quiser. Se estiver usando comercialmente, torne-se um dos nossos maravilhosos patrocinadores para financiar a manutenção, suporte e desenvolvimento do Dante agora e no futuro.
 
-### **💓 Your sponsorship**
+### **💓 Seu patrocínio**
 
-> Your sponsorship helps to maintain, update, support and develop all of our open source projects, including tiptap and many more.
+> Seu patrocínio ajuda a manter, atualizar, apoiar e desenvolver todos os nossos projetos de código aberto, incluindo tiptap e muitos mais.
 
-### **Acknowledgments**
+### **Agradecimentos**
 
-Prosemirror library & Tiptap authors
+Biblioteca Prosemirror & autores do Tiptap
 
 
 ## Workspaces
 
-we use npm workspaces to manage the monorepo, for instance to install a dependence in some package, use:
+Usamos espaços de trabalho npm para gerenciar o monorrepositório, por exemplo, para instalar uma dependência em algum pacote, use:
 
 `npm install --workspace=Dante2`    
 
 `npm install some-dep --workspace=Dante2`    
 
 
-### build
+### construir
 
 + npm run dante3:build
 + npm run dante2:build
 
-### deploy
+### implantar
 
 + npm run dante3:publish
 + npm run dante2:publish
